@@ -35,10 +35,6 @@ int main(int argc, const char * argv[]) {
     
     std::ifstream upload(filePath, std::ios::binary);
     
-    upload.seekg(0, upload.end);
-    long bytes = upload.tellg();
-    upload.seekg(0, upload.beg);
-    
     char buffer[BUFFERSIZE];
     int bytes_read = 0;
     
